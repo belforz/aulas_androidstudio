@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     //definindo variaveis - globais
 
-    double vnum1, vnum2, vresul;
+    double vnum1, vnum2, vnum3, vresul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText et_valor1 = (EditText) findViewById(R.id.et_valor1);
         EditText et_valor2 = (EditText) findViewById(R.id.ed_valor2);
+        EditText ed_valor7 = (EditText) findViewById(R.id.ed_valor7);
 
         TextView tv_resultado = (TextView) findViewById(R.id.tv_resultado);
 
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 vnum1 = Double.parseDouble(et_valor1.getText().toString());
                 vnum2 = Double.parseDouble(et_valor2.getText().toString());
-                vresul = vnum1 + vnum2;
+                vnum3 = Double.parseDouble(ed_valor7.getText().toString());
+                vresul = vnum1 + vnum2 + vnum3;
                 tv_resultado.setText(String.valueOf(vresul));
             }
 
@@ -51,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View V) {
                 vnum1 = Double.parseDouble(et_valor1.getText().toString());
                 vnum2 = Double.parseDouble(et_valor2.getText().toString());
-                vresul = vnum1 - vnum2;
+                vnum3 = Double.parseDouble(ed_valor7.getText().toString());
+                vresul = vnum1 - vnum2 - vnum3;
 
                 tv_resultado.setText(String.valueOf(vresul));
 
@@ -64,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 vnum1 = Double.parseDouble(et_valor1.getText().toString());
                 vnum2 = Double.parseDouble(et_valor2.getText().toString());
-                vresul = vnum1 * vnum2;
+                vnum3 = Double.parseDouble(ed_valor7.getText().toString());
+                vresul = vnum1 * vnum2 * vnum3;
                 tv_resultado.setText(String.valueOf(vresul));
             }
 
@@ -77,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 vnum1 = Double.parseDouble(et_valor1.getText().toString());
                 vnum2 = Double.parseDouble(et_valor2.getText().toString());
-                vresul = vnum1 / vnum2;
+                vnum3 = Double.parseDouble(ed_valor7.getText().toString());
+                vresul = (vnum1 / vnum2) / vnum3;
                 tv_resultado.setText(String.valueOf(vresul));
 
             }

@@ -59,6 +59,20 @@
          android:inputType="number"
          android:numeric="decimal"
          android:text="0"/>
+     <TextView
+         android:id="@+id/textView7"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Digite o valor 3"/>
+
+     <EditText
+         android:id="@+id/ed_valor7"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="number"
+         android:numeric="decimal"
+         android:text="0"/>
 
      <TextView
          android:id="@+id/textView6"
