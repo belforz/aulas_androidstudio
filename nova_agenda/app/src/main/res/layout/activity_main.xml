@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:backgroundTint="#30D68D"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:background="#3BFFF8"
+        android:text="AGENDA"
+        android:textAlignment="center"
+        android:textColor="#FF5733"
+        android:textColorHighlight="#D01E67"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:background="#33B5FF"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/cadastro"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D01E67"
+        android:text="Cadastro" />
+
+</LinearLayout>
+

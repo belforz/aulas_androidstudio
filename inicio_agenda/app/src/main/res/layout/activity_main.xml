@@ -14,23 +14,25 @@
         tools:layout_editor_absoluteY="1dp"
         android:background="#D58BA4">
 
+
         <TextView
             android:id="@+id/textView"
             style="@style/TextviewStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
             android:layout_margin="20px"
-            android:text="Display Site"
+            android:padding="8dp"
+            android:text="Agenda"
             android:textAlignment="center"
             android:textColor="#D3D3D3"
-            android:textSize="24sp"
-            android:padding="8dp"/>
-
+            android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="379dp"
+            android:background="#ECBED8"
             android:contentDescription="l"
             android:orientation="horizontal"
 
