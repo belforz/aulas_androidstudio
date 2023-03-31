@@ -41,11 +41,17 @@
             tools:visibility="visible" />
 
         <Button
-            android:id="@+id/btn_cadastrar"
+            android:id="@+id/btn_cadastro"
             style="@style/ButtonStyle"
             android:text="Cadastrar"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
 
     </LinearLayout>
