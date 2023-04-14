@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btInicio = findViewById(R.id.btn1);
+        btInicio = findViewById(R.id.btn_cadastro);
 
         btInicio.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,13 +68,13 @@ public class SegundaTela extends AppCompatActivity {
                 String getDiretor = diretor.getText().toString();
                 String getAtores = atores.getText().toString();
                 String getDescricao = descricao.getText().toString();
-
+                Log.d("MY_APP_TAG", "Values retrieved: " + getFilme + ", " + getAno + ", " + getDiretor + ", " + getAtores + ", " + getDescricao);
                 Intent it = new Intent(SegundaTela.this, telaSalva.class);
-                getIntent().putExtra("filme_txt",getFilme);
-                getIntent().putExtra("ano_txt",getAno);
-                getIntent().putExtra("diretor_txt",getDiretor);
-                getIntent().putExtra("atores_txt",getAtores);
-                getIntent().putExtra("descricao_txt",getDescricao);
+                it.putExtra("filme_txt",getFilme);
+                it.putExtra("ano_txt",getAno);
+                it.putExtra("diretor_txt",getDiretor);
+                it.putExtra("atores_txt",getAtores);
+                it.putExtra("descricao_txt",getDescricao);
                 startActivity(it);
 
 

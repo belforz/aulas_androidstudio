@@ -1,6 +1,7 @@
 package com.example.avaliacao;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,8 @@ public class telaSalva extends AppCompatActivity {
         String getDiretor = getIntent().getStringExtra("diretor_txt");
         String getAtores = getIntent().getStringExtra("atores_txt");
         String getDescricao = getIntent().getStringExtra("descricao_txt");
+
+        Log.d("MY_APP_TAG", "Values retrieved: " + getFilme + ", " + getAno + ", " + getDiretor + ", " + getAtores + ", " + getDescricao);
 
         filme.setText(getFilme);
         ano.setText(getAno);
