@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_fundo"
+        android:scaleType="centerCrop"
+        android:orientation="vertical"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SegundaTela">
+
+
+        <ImageView
+            android:id="@+id/icon_imageView1"
+            android:layout_width="244dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:background="@color/gold"
+            app:srcCompat="@android:drawable/ic_menu_slideshow" />
+
+        <TextView
+            android:id="@+id/txtfilme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filme:"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/edt_filme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        <TextView
+            android:id="@+id/txt_ano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ano:"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/edt_ano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        <TextView
+            android:id="@+id/txt_diretor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diretor:"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/edt_diretor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/Atores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atores:"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edt_atores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descricao"
+            android:id="@+id/descricao_txt"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edt_descricao"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnLimpar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:text="Limpar" />
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:text="Salvar" />
+            <Button
+                android:id="@+id/btn_Excluir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:text="Excluir"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Uma imagem"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:id="@+id/btn_imagem"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

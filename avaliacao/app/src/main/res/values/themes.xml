@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Avaliacao" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextviewStyle" >
+        <item name ="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center|center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">20px</item>
+        <item name ="android:textAlignment">center</item>
+        <item name ="android:textColor">#FFA3CB</item>
+        <item name ="android:padding">6dp</item>
+        <item name="android:shadowColor">#FF61FF</item>
+        <item name="android:shadowDx">2</item>
+        <item name ="android:shadowDy">2</item>
+        <item name ="android:shadowRadius">4</item>
+        <item name ="android:textSize">30sp</item>
+    </style>
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name ="android:textColor">@color/gold</item>
+        <item name ="android:textAlignment">center</item>
+        <item name ="android:padding">6dp</item>
+        <item name="android:shadowColor">#FF61FF</item>
+        <item name="android:shadowDx">2</item>
+        <item name ="android:shadowDy">2</item>
+        <item name ="android:shadowRadius">4</item>
+        <item name ="android:textSize">25sp</item>
+
+
+
+
+
+    </style>
+</resources>
