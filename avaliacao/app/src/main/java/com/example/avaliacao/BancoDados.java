@@ -79,4 +79,18 @@ import android.database.sqlite.SQLiteOpenHelper;
                     cursor.getString(4), cursor.getString(5));
             return filme;
         }
+
+        void atualizarFilme(Filme filme){
+            SQLiteDatabase db = this.getReadableDatabase();
+            ContentValues valor = new ContentValues();
+            valor.put(COLUNA_FILME,filme.getFilme());
+            valor.put(COLUNA_ANO,filme.getAno());
+            valor.put(COLUNA_DIRETOR, filme.getDiretor());
+            valor.put(COLUNA_ATORES, filme.getAtores());
+            valor.put(COLUNA_DESCRICAO, filme.getDescricao());
+
+
+            db.update(TABELA_FILMES,valor,COLUNA_CODIGO + " =?", new String[]{String.valueOf(filme.getCodigo())});
+            db.close();
+        }
 }
