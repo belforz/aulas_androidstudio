@@ -7,7 +7,7 @@ public class Filme {
     private String atores;
     private String diretor;
     private String descricao;
-
+    //  Construtor da classe Filme que recebe como parâmetro todas as variáveis da classe.
     public Filme(int codigo, String filme, String ano, String atores, String diretor, String descricao) {
         this.codigo = codigo;
         this.filme= filme;
@@ -16,7 +16,7 @@ public class Filme {
         this.diretor = diretor;
         this.descricao = descricao;
     }
-
+    // Construtor da classe Filme que recebe como parâmetro todas as variáveis da classe, exceto o código.
     public Filme(String filme, String ano, String atores, String diretor, String descricao) {
         this.codigo = codigo;
         this.filme = filme;
@@ -25,7 +25,7 @@ public class Filme {
         this.diretor = diretor;
         this.descricao = descricao;
     }
-
+    // metodos para definir e rotrnar os valores atribuidos as constantes declaradas
     public int getCodigo() {
         return codigo;
     }
