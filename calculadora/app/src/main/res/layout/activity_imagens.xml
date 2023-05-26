@@ -6,56 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".ImagensActivity">
 
+
+
     <LinearLayout
+        android:id="@+id/LinearLayout"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
-        android:id="@+id/LinearLayout">
+        android:background="@drawable/taylorfundo3"
+
+        >
+
 
         <ImageView
             android:id="@+id/foto1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/border"
             android:src="@drawable/taylor" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
 
         <TextView
+            android:id="@+id/txtinformacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
             android:text="Foto 1"
-            android:id="@+id/txtinformacao"
-            android:textSize="20dp"
-            android:paddingLeft="10dp" />
+            android:textSize="20dp" />
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exibir foto 1"
-            android:id="@+id/btfoto1"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Exibir foto 2"
-            android:id="@+id/btfoto2"/>
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Exibir foto 3"
-            android:id="@+id/btfoto3"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Exibir foto 4"
-            android:id="@+id/btfoto4"/>
+            <Button
+                android:id="@+id/btfoto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exibir foto 1" />
+
+            <Button
+                android:id="@+id/btfoto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exibir foto 2" />
+
+            <Button
+                android:id="@+id/btfoto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exibir foto 3" />
+
+            <Button
+                android:id="@+id/btfoto4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exibir foto 4" />
 
 
-
-
+        </LinearLayout>
     </LinearLayout>
+
 
 
 
