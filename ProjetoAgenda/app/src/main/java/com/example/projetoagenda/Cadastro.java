@@ -37,7 +37,7 @@ public class Cadastro extends AppCompatActivity {
 
     InputMethodManager imm;
 
-        BancoDeDados db = new BancoDeDados(this);
+    BancoDeDados db = new BancoDeDados(this);
 
 
     @Override

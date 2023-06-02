@@ -17,10 +17,11 @@
         <entry key="..\:/Users/55119/Desktop/ProjetoAgenda/app/src/main/res/layout/activity_mostrar.xml" value="0.36875" />
         <entry key="..\:/Users/55119/Desktop/ProjetoAgenda/app/src/main/res/layout/pessoa_lista.xml" value="0.5" />
         <entry key="..\:/Users/55119/Desktop/ProjetoAgenda/app/src/main/res/layout/teste.xml" value="1.761513157894737" />
+        <entry key="..\:/Users/Lab08-MicroProf/Desktop/ProjetoAgenda/app/src/main/res/layout/activity_cadastro.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
