@@ -6,7 +6,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-    public class BancoDados extends SQLiteOpenHelper {
+import java.util.ArrayList;
+import java.util.List;
+
+public class BancoDados extends SQLiteOpenHelper {
         // Define a versão do banco de dados
 
         public static final int VERSAO_BANCO = 1;
@@ -111,4 +114,34 @@ import android.database.sqlite.SQLiteOpenHelper;
             db.update(TABELA_FILMES,valor,COLUNA_CODIGO + " =?", new String[]{String.valueOf(filme.getCodigo())});
             db.close();
         }
-}
+
+    public List<Filme> listaPessoa() {
+
+        List<Filme> filmeLista = new ArrayList<Filme>();
+
+        String query = "SELECT * FROM " + TABELA_FILMES;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery(query, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+
+                Filme filme = new Filme();
+
+                filme.setCodigo(Integer.parseInt(cursor.getString(0)!=null?cursor.getString( 0 ):"0"));
+                filme.setFilme(cursor.getString(1));
+                filme.setAno(cursor.getString(2));
+                filme.setAtores(cursor.getString(3));
+                filme.setDiretor(cursor.getString(4));
+                filme.setDescricao(cursor.getString(5));
+
+                filmeLista.add(filme);
+
+            } while (cursor.moveToNext());
+        }
+
+        return filmeLista;
+
+    }}
